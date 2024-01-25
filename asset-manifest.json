@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Jeisson30/aventura.github.io/static/css/main.964fdded.css",
+    "main.js": "/Jeisson30/aventura.github.io/static/js/main.6fa28f37.js",
+    "static/js/787.1348edd1.chunk.js": "/Jeisson30/aventura.github.io/static/js/787.1348edd1.chunk.js",
+    "index.html": "/Jeisson30/aventura.github.io/index.html",
+    "main.964fdded.css.map": "/Jeisson30/aventura.github.io/static/css/main.964fdded.css.map",
+    "main.6fa28f37.js.map": "/Jeisson30/aventura.github.io/static/js/main.6fa28f37.js.map",
+    "787.1348edd1.chunk.js.map": "/Jeisson30/aventura.github.io/static/js/787.1348edd1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.964fdded.css",
+    "static/js/main.6fa28f37.js"
+  ]
+}
