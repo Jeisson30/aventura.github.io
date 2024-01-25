@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
 import { auth } from '../../firebase';
+import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import './Login.css';
 
 const Login = () => {
+
+  const navigate = useNavigate();
+
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -20,6 +24,7 @@ const Login = () => {
         timer: 1500
       });
       console.log('Usuario autenticado:', userCredential.user);
+      navigate('/Galery'); 
     } catch (error) {
       Swal.fire({
         icon: 'error',
@@ -45,6 +50,7 @@ const Login = () => {
         Swal.fire({
           icon: 'warning',
           text: 'El correo electrónico ya está en uso',
+          confirmButtonColor: '#3498db'
         });
       } else {
         Swal.fire({
@@ -66,6 +72,7 @@ const Login = () => {
         confirmButtonColor: '#3498db',
       });
       console.log('Usuario autenticado con Google:', userCredential.user);
+      navigate('/Galery'); 
     } catch (error) {
       Swal.fire({
         icon: 'error',

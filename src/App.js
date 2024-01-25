@@ -1,14 +1,21 @@
+import React from 'react';
 import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 import Login from './components/auth/Login';
+import Galery from './components/views/Galery';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Init commit</h1>
-      </header>
-      <Login />
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path='/Galery' element={<Galery />} />
+        </Routes>
+      </div>
+    </Router>  
+    
   );
 }
 
