@@ -56,6 +56,7 @@ const Login = () => {
         Swal.fire({
           icon: 'error',
           title: 'Error en el registro',
+          confirmButtonColor: '#3498db'
         });
       } 
       console.log('Error en el registro:', error);
