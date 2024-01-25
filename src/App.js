@@ -1,4 +1,5 @@
 import './App.css';
+import Login from './components/auth/Login';
 
 function App() {
   return (
@@ -6,6 +7,7 @@ function App() {
       <header className="App-header">
         <h1>Init commit</h1>
       </header>
+      <Login />
     </div>
   );
 }

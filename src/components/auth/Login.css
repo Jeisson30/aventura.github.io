@@ -1,0 +1,67 @@
+/* src/components/auth/Login.css */
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 20px;
+    /* Añade un espacio interno al formulario */
+    border: 2px solid #3498db;
+    /* Borde azul */
+    border-radius: 8px;
+    /* Esquinas redondeadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+}
+
+label {
+    margin-bottom: 8px;
+    color: #3498db;
+    /* Color azul */
+}
+
+input {
+    margin-bottom: 16px;
+    padding: 8px;
+    border: 1px solid #3498db;
+    /* Borde del input azul */
+    border-radius: 4px;
+    /* Esquinas redondeadas */
+}
+
+.login-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centra los botones */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    /* Fondo azul */
+    color: #fff;
+    /* Texto blanco */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* Agrega una transición suave al color de fondo */
+
+    &:hover {
+        background-color: #217dbb;
+        /* Cambia el color al pasar el ratón */
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 8px;
+        /* Espacio entre los botones */
+    }
+}
